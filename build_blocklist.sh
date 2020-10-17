@@ -27,7 +27,7 @@ echo "Fetching blocklists" >&2
 parallel "${CURDIR}/download_file.sh" {} "${TARGET_DIR}/raw/{#}.txt" < "${SOURCES_FILE}"
 
 echo "Cleaning up blocklists" >&2
-parallel "${CURDIR}./blocklist_cleanup.py" {} "${TARGET_DIR}/cleaned/{/}.txt" ::: "${TARGET_DIR}/raw"/*.txt
+parallel "${CURDIR}/blocklist_cleanup.py" {} "${TARGET_DIR}/cleaned/{/}.txt" ::: "${TARGET_DIR}/raw"/*.txt
 
 echo "Aggregating blocklists" >&2
 sort --unique "${TARGET_DIR}/cleaned"/*.txt > "${FINAL_BLOCKLIST}"
