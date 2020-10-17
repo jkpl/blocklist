@@ -2,7 +2,7 @@ image: registry.gitlab.com/lepovirta/lepo-build
 
 stages:
 - build
-- publish
+- pages
 
 workflow:
   rules:
@@ -18,8 +18,8 @@ build:
     - blocklist.txt
     expire_in: 1 days
 
-publish:
-  stage: publish
+pages:
+  stage: pages
   script:
   - mkdir -p public
   - cp index.html public/
@@ -30,6 +30,6 @@ publish:
     paths:
     - public
     expire_in: 10 days
-#   rules:
-#   - if: $CI_COMMIT_BRANCH == "master"
+  rules:
+  - if: $CI_COMMIT_BRANCH == "master"
 
