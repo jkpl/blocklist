@@ -7,7 +7,7 @@
 1. Log into your Edgerouter
 2. Grant yourself superuser permissions using `sudo -i`
 3. Add the following contents to this file: `/config/user-data/update-adblock-dnsmasq.sh` (`vi` should be available)
-    ```
+    ```bash
     #!/usr/bin/env bash
     set -euo pipefail
 
