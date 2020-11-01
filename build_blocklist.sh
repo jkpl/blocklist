@@ -36,5 +36,6 @@ cat <<EOF >&2
 Stats:
   Sources crawled : $(wc -l < "${SOURCES_FILE}")
   Hosts blocked   : $(wc -l < "${FINAL_BLOCKLIST}")
+  File size       : $(du -h "${FINAL_BLOCKLIST}" | awk '{print $1}')
 EOF
 
