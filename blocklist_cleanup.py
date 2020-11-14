@@ -13,9 +13,12 @@ NOT_EXTERNAL_HOSTNAME=set((
 ))
 
 def load_whitelist():
-    with open(WHITELIST_PATH) as fp:
-        lines = (line.strip() for line in fp.readlines())
-        return set(lines)
+    try:
+        with open(WHITELIST_PATH) as fp:
+            lines = (line.strip() for line in fp.readlines())
+            return set(lines)
+    except FileNotFoundError:
+        return set()
 
 def is_external_hostname(s):
     return not s in NOT_EXTERNAL_HOSTNAME
