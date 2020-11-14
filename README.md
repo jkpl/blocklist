@@ -25,7 +25,7 @@
         exit 1
     fi
 
-    /etc/init.d/dnsmasq force-reload
+    systemctl restart dnsmasq
     ```
 4. Make the file executable: `chmod +x /config/user-data/update-adblock-dnsmasq.sh`
 5. Run it: `/config/user-data/update-adblock-dnsmasq.sh`
