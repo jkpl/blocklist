@@ -1,0 +1,4 @@
+^msedge\.net$
+^.*\.msedge\.net$
+^a-msedge\.net$
+^.*\.microsoft.com$
