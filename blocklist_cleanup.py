@@ -2,6 +2,7 @@
 
 import sys
 import os
+import re
 
 WHITELIST_PATH=os.getenv("WHITELIST_PATH", "whitelist.txt")
 TARGET_IP=os.getenv("TARGET_IP", "0.0.0.0")
@@ -15,10 +16,16 @@ NOT_EXTERNAL_HOSTNAME=set((
 def load_whitelist():
     try:
         with open(WHITELIST_PATH) as fp:
-            lines = (line.strip() for line in fp.readlines())
-            return set(lines)
+            lines = (re.compile(line.strip()) for line in fp.readlines())
+            return list(lines)
     except FileNotFoundError:
-        return set()
+        return list()
+
+def is_whitelisted(whitelist, host):
+    for r in whitelist:
+        if r.match(host):
+            return True
+    return False
 
 def is_external_hostname(s):
     return not s in NOT_EXTERNAL_HOSTNAME
@@ -39,7 +46,7 @@ def clean_line(line, whitelist):
     ), "")
 
     # Filter out whitelisted hosts
-    if host in whitelist:
+    if is_whitelisted(whitelist, host):
         return None
 
     # Print hosts in dnsmasq format
