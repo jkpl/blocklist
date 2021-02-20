@@ -7,7 +7,6 @@ https://adaway.org/hosts.txt
 https://bitbucket.org/ethanr/dns-blacklists/raw/8575c9f96e5b4a1308f2f12394abd86d0927a4a0/bad_lists/Mandiant_APT1_Report_Appendix_D.txt
 https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt
 https://hostfiles.frogeye.fr/firstparty-trackers-hosts.txt
-https://mirror.cedia.org.ec/malwaredomains/immortal_domains.txt
 https://osint.digitalside.it/Threat-Intel/lists/latestdomains.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimetype=plaintext
 https://phishing.army/download/phishing_army_blocklist_extended.txt
