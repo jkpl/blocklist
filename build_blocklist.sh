@@ -31,7 +31,6 @@ https://v.firebog.net/hosts/Prigent-Ads.txt
 https://v.firebog.net/hosts/Prigent-Crypto.txt
 https://v.firebog.net/hosts/Shalla-mal.txt
 https://v.firebog.net/hosts/static/w3kbl.txt
-https://www.malwaredomainlist.com/hostslist/hosts.txt
 https://zerodot1.gitlab.io/CoinBlockerLists/hosts_browser
 '
 SOURCES=$(echo "${SOURCES}" | sed '/^$/d') # trim empty lines
