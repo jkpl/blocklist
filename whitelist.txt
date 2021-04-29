@@ -2,3 +2,7 @@
 ^.*\.msedge\.net$
 ^a-msedge\.net$
 ^.*\.microsoft.com$
+^windows.com$
+^.*\.windows.com$
+^windows.net$
+^.*\.windows.net$
