@@ -12,7 +12,6 @@ https://pgl.yoyo.org/adservers/serverlist.php?hostformat=hosts&showintro=0&mimet
 https://phishing.army/download/phishing_army_blocklist_extended.txt
 https://raw.githubusercontent.com/anudeepND/blacklist/master/adservers.txt
 https://raw.githubusercontent.com/bigdargon/hostsVN/master/hosts
-https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt
 https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareHosts.txt
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.2o7Net/hosts
 https://raw.githubusercontent.com/FadeMind/hosts.extras/master/add.Risk/hosts
