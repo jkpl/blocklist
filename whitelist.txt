@@ -6,3 +6,13 @@
 ^.*\.windows.com$
 ^windows.net$
 ^.*\.windows.net$
+^1drv.ms$
+^.*\.1drv.ms$
+^.*\.live.com$
+^.*\.live.net$
+^.*\.microsoftonline.com$
+^.*\.google.com$
+^.*\.akamaihd.net$
+^.*\.akamaitechnologies.com$
+^.*\.akamaized.net$
+^.*\.amazonaws.com$
