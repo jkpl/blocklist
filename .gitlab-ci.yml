@@ -1,4 +1,4 @@
-image: registry.gitlab.com/lepovirta/lepo-build
+image: registry.gitlab.com/lepovirta/dis/lepo-build:latest
 
 stages:
 - build
